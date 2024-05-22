@@ -23,7 +23,8 @@ section{
     -ms-flex: 3;
     flex: 3;
     font-family:verdana;
-    padding-left:30px
+    padding-left:30px;
+    padding-bottom:30px;
 }
 .sidebar {
     -webkit-flex: 1;
@@ -35,6 +36,9 @@ section{
     padding-left:30px;
     font-size: 156.25%;
 }
+.sidebar_options {
+    color:rgb(31, 65, 120);
+}
 .selection {
     background-color:rgb(74, 107, 188);
     color:white;
@@ -44,6 +48,7 @@ section{
     background-color:rgb(31, 65, 120);
     color:white;
     padding:30px;
+    font-size:75%
 }
 @media (max-width: 600px){
     section{
