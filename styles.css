@@ -50,6 +50,19 @@ section{
     padding:30px;
     font-size:75%
 }
+.button {
+    background-color:rgb(31, 65, 120);
+    color:white;
+    padding:15px 20px;
+    text-align: center;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color:white;
+    color:rgb(31, 65, 120);
+    border:2px solid rgb(31, 65, 120);
+}
 @media (max-width: 600px){
     section{
         -webkit-flex-direction: column;
