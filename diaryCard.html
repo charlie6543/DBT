@@ -26,22 +26,78 @@
         </div>
         <div class="body">
             <h1>Diary Card</h1>
-            <p>DBT, or Dialectical Behavior Therapy, is a type of talk therapy based off Cognitive Behavioral Therapy (CBT). 
-                CBT aims to help people understand how thoughts affects emotions and behaviors, while DBT is specialized for 
-                people who feel emotions very intensely, focusing on teaching people healthy ways to cope with extreme emotions. 
-                It has proven effective for managing conditions including Borderline Personality Disorder, Post-Traumatic 
-                Stress Disorder, Substance Use Disorder, eating disorders like bulimia and binge eating disorder, depression, 
-                and anxiety. It is effective when treating those with suicidal or self-harming behavior.</p>
-            <p>DBT teaches various skills and techniques to help people cope with day-to-day stresses and crisises. These are 
-                separated into four sections: Mindfulness, Distress Tolerance, Interpersonal Effectiveness, and Emotion Regulation. 
-                DBT is usually a multiple week program spanning six months to a year. It involves dedicated commitment from patients
-                to put their lessons into practice each week.</p>
-            <p>This website aims to be a resource that can introduce people to these techniques. It aims to compile everything 
-                directly from DBT worksheets into a more user-friendly and approachable digital format. 
-                While sessions with a dedicated therapist or group are irreplacable, this website aims to be a 
-                resource for those who are unable to attend therapy, are interested in DBT, or want to refresh on things they
-                learned in sessions.</p>
-            <button type="button"><a href="goals.html">Begin Program</a></button>
+            <p>The Diary Card is meant to be filled out daily to track habits, skills, and
+                behaviors. It can be a useful tool to evaluate your general progress or go
+                over in individual therapy.
+            </p><br>
+            <p><strong>Date:</strong></p>
+            <input type="date" id="date">
+            <br><br><p>On a scale of 0 (no urges or experiences at all) to 5 (the most intense urges
+                or experiences possible), rate the following:</p>
+            <p><strong>Highest Urge To:</strong></p>
+            <body>Commit Suicide:</body>
+            <input type="number" id="suicideRange" min="0" max="5">
+            <body>Self Harm:</body>
+            <input type="number" id="selfharmRange" min="0" max="5">
+            <body>Use Drugs:</body>
+            <input type="number" id="drugsRange" min="0" max="5"><br>
+            
+            <p><strong>Highest Rating For Each Day:</strong></p>
+            <body>Emotion Misery:</body>
+            <input type="number" id="emoRange" min="0" max="5">
+            <body>Physical Misery:</body>
+            <input type="number" id="physRange" min="0" max="5">
+            <body>Joy:</body>
+            <input type="number" id="joyRange" min="0" max="5"><br>
+            
+            <br><p><strong>Drugs/Medications:</strong></p>
+            <p>Alcohol:</p>
+            <body>Number of drinks:</body>
+            <input type="number" id="drinkNum" min="0" max="99">
+            <br><body>Type of drink:</body>
+            <input type="text" id="drinkType">
+            <p>Illicit Drugs:</p>
+            <body>Number taken:</body>
+            <input type="number" id="drugNum" min="0" max="99"><br>
+            <body>Type of drug:</body>
+            <input type="text" id="drugType"><br><br>
+            <body>Meds as Prescribed:</body>
+            <select name="meds" id="meds">
+                <option value="N/A"></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select> 
+            <p>PRN/Over the Counter:</p>
+            <body>Number taken:</body>
+            <input type="number" id="OTCNum" min="0" max="99"><br>
+            <body>Type of drug:</body>
+            <input type="text" id="OTCType"><br>
+            
+            <br><p><strong>Actions</strong></p>
+            <body>Self Harm:</body>
+            <select name="sh" id="sh">
+                <option value="N/A"></option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
+            <body>Skills:</body>
+            <input type="number" id="emoRange" min="0" max="7">
+
+            <br><br>
+            <p>Any additional behaviors that you want to track:</p>
+            <p><strong>Emotions</strong></p>
+            <input type="text" id="emo1">
+            <input type="number" id="emo1Range" min="0" max="5"><br>
+            <input type="text" id="emo2">
+            <input type="number" id="emo2Range" min="0" max="5">
+            <p><strong>Optional</strong></p>
+            <input type="text" id="op1">
+            <input type="text" id="op1input"><br>
+            <input type="text" id="op2">
+            <input type="text" id="op2input">
+            <p><strong>Additional Notes:</strong></p>
+            <input type="text" id="emo1" style="width:80%; height:80px">
+
         </div>
     </section>
 
